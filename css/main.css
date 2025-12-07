@@ -450,34 +450,29 @@ ul li:first-child {
     /* About */
 
     .about {
-      padding-bottom: 257px;
+      padding-bottom: 125px;
     }
     .about__wrapper {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); 
-      gap: 194px;
+      grid-template-columns: repeat(2, 60% 40%);
+      gap: 37px;
     }  
     .about__wrapper-content {
-      display: flex;
-      flex-direction: column;
-      gap: 36px;
+      gap: 56px;
     }
     .about__content > h2 {
-      margin-bottom: 24px;
+      margin-bottom: 14px;
+      font-size: 36px;
     }
-    .about__info {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-items: left;
+    .about-txt {
+      font-size: 16px;
     }
-    .info-num {
+     .info-num {
       text-align: center;
     }
     .info-num > h2 {
-      color: #2a3246;
+      font-size: 30px;
     }
-    .about__wrapper-img {
-      margin-left: auto;
-      margin-right: 0;
+    .info-num-txt {
+      font-size: 16px;
     }
 }
