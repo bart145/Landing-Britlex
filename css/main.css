@@ -829,32 +829,13 @@ ul li:first-child {
 
 @media screen and (max-width: 575px) {
   .container__menu {
-    height: 100vh;
-    max-width: 430px;
-    background-color: #fff;
-    position: relative;
-    z-index: 1;
-    margin: -77px 0 0 -20px;
-    padding-left: 20px;
-    padding-top: 32px;
     display: none;
-  }
-  .mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
   }
   .menu {
     display: none;
   }
   .logo__title {
     font-size: 30px;
-  }
-  .divider__mobile {
-    width: 364px;
-    height: 1px;
-    background-color: #c4c4c4;
-    margin: 21px 0 40px;
   }
   .menu__mobile {
     margin-bottom: 62px;
@@ -874,72 +855,57 @@ ul li:first-child {
   .navbar > button {
     display: none;
   }
-  .btn__mobile {
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 17px 57px;
-    background-color: var(--dark_blue-color);
-    border: var(--dark_blue-color) solid 2px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
   .burger {
     display: block;
   }
-  .close {
-    position: absolute;
-    width: 39px;
-    height: 39px;
-    top: 22px;
-    right: 16px;
-  }
-
+  
 
   /*hero */
+  
   .hero {
-    padding-top: 62px;
-    padding-bottom: 62px;
+    padding-top: 0;
+    padding-bottom: 96px;
   }
   .hero__grid {
-  gap: 0px;
+  grid-template-columns: 1fr;  
+  gap: 20px;
+  }
+  .hero__content {
+    text-align: center;
+    order: 2;
+  }
+  .hero__image {
+    order: 1;
   }
   .hero__item {
-    gap: 12px;    
-    max-width: 330px;
+    gap: 0px;    
+    max-width: 100%;
   }
   .hero__item > img {
-    width: 90px;
+    display: none;;
   }
   .hero__title {
-    font-size: 36px;
-    line-height: 45px;
-    margin-bottom: 25px;
+    font-size: 34px;
+    width: 100%;
   }
   .hero__text {
-    font-size: 16px;
-    margin-bottom: 32px;
-    max-width: 338px;
-    line-height: 27px;
+    margin-bottom: 35px;
+    max-width: 100%;
+    
   }
   .hero__content > button {
-    padding: 19px 67px;
-    border-radius: 5px;
-    font-size: 18px;
+    padding: 21px 104px;
+    
   }
 
   /* skills */
 
   .skills {
-    padding-bottom: 52px;
-  }
-  .text-center {
-    font-size: 30px;
+    padding-bottom: 96px;
   }
   .skills__wraapper {
-    gap: 10px;
+    grid-template-columns: repeat(2, 50%);
+    gap: 30px;
   }
   .skills__item  {
     padding: 20px;
